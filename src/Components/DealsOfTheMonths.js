@@ -36,7 +36,7 @@ const DealsOfTheMonths = () => {
   const pad = (num) => String(num).padStart(2, '0');
 
   return (
-    <div className="bg-gradient-to-br from-white to-gray-100 py-12 px-6 md:px-20">
+    <div className=" max-w-[1080px] bg-gradient-to-br from-white to-gray-100 py-10 px-6 md:px-20">
       <div className="flex flex-col lg:flex-row justify-between items-center gap-10">
         {/* Left Side */}
         <div className="max-w-lg">
