@@ -13,29 +13,33 @@ import Footer from "./Components/Footer";
 
 const App = () => {
   return (
-    <div className=" w-[1920px] flex flex-col items-center justify-center h-auto bg-gray text-white  font-sans">
+    <div className="flex flex-col items-center w-[100vw] overflow-hidden justify-center h-auto bg-gray text-white font-sans">
       <div className="max-w-[1080px]">
         {/* Header */}
         <Header />
 
         {/* Main Grid */}
         <Main />
-
-        
       </div>
 
-      <div>
-        {/* Brand-Logo */}
-        <BrandLogo />
+      {/* Brand-Logo */}
+      <BrandLogo />
 
-        {/* DealOfTheMonth */}
-        <DealsOfTheMonths />
+      {/* DealOfTheMonth */}
+      <DealsOfTheMonths />
 
+      <div className="flex flex-col justify-center items-center max-w-[1080px]">
         {/* New Arrivals */}
         <NewArrivals />
 
-        {/* Sppotlight */}
+        </div>
+
+        <div className="w-full">
+          {/* Spotlight */}
         <ProductSpotlight />
+        </div>
+
+        <div className="flex flex-col justify-center items-center max-w-[1080px]">
 
         {/* Feature Section */}
         <FeatureSection />

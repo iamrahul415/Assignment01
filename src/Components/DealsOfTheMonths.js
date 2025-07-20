@@ -36,10 +36,11 @@ const DealsOfTheMonths = () => {
   const pad = (num) => String(num).padStart(2, '0');
 
   return (
-    <div className=" max-w-[1080px] bg-gradient-to-br from-white to-gray-100 py-10 px-6 md:px-20">
+    <div className=" flex justify-center max-w-[1080px] bg-gradient-to-br from-white to-gray-100 py-10 px-6">
       <div className="flex flex-col lg:flex-row justify-between items-center gap-10">
+        
         {/* Left Side */}
-        <div className="max-w-lg">
+        <div className="">
           <h2 className="text-4xl font-bold text-gray-800">Deals Of The Month</h2>
           <p className="mt-4 text-gray-500">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis ultrices sollicitudin aliquam sem.
@@ -53,8 +54,8 @@ const DealsOfTheMonths = () => {
           </button>
 
           <div className="mt-10">
-            <h4 className="text-xl font-semibold mb-4">Hurry, Before It’s Too Late!</h4>
-            <div className="flex space-x-4">
+            <h4 className="text-xl text-gray-600 font-semibold mb-4">Hurry, Before It’s Too Late!</h4>
+            <div className="flex space-x-4 text-gray-600 ">
               {[
                 { label: 'Days', value: pad(timeLeft.days) },
                 { label: 'Hr', value: pad(timeLeft.hours) },
@@ -78,13 +79,14 @@ const DealsOfTheMonths = () => {
             {[1, 2, 3].map((n) => (
               <div key={n} className="relative min-w-[280px] max-w-[300px]">
                 <img
-                  src={`./assets/imageD1.png`}
+                  src={`./assets/image1.png`}
+        
                   alt={`Deal ${3}`}
                   className="rounded-md w-full object-cover"
                 />
                 <div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-md shadow-md text-sm">
-                  <p className="text-gray-500">— Spring Sale</p>
-                  <p className="text-xl font-bold text-gray-800">30% OFF</p>
+                  <p className="text-gray-500">01— Spring Sale</p>
+                  <p className="text-xl font-light text-gray-800">30% OFF</p>
                 </div>
               </div>
             ))}

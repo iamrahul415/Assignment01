@@ -51,8 +51,9 @@ const NewArrivals = () => {
   const [activeTab, setActiveTab] = useState("Men's T-Shirts");
 
   return (
-    <section className="bg-white py-16 px-4 md:px-16 text-center">
-      <h2 className="text-4xl font-bold text-gray-800 mb-4">New Arrivals</h2>
+    <div>
+       <section className="bg-white py-16 text-center">
+      <h2 className="text-4xl font-serif text-gray-600 mb-4">New Arrivals</h2>
       <p className="text-gray-500 max-w-2xl mx-auto mb-10">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
         duis ultrices sollicitudin aliquam sem.
@@ -85,9 +86,9 @@ const NewArrivals = () => {
             <img
               src={item.image}
               alt={item.title}
-              className="w-full h-64 object-cover rounded-md"
+              className="w-full h-60 object-cover rounded-md"
             />
-            <h3 className="mt-4 text-lg font-semibold">{item.title}</h3>
+            <h3 className="mt-4 text-lg text-gray-800 font-normal">{item.title}</h3>
             <p className="text-sm text-gray-500">{item.brand}</p>
 
             {/* Ratings */}
@@ -101,7 +102,7 @@ const NewArrivals = () => {
 
             {/* Price and Availability */}
             <div className="mt-2 flex justify-between items-center text-sm">
-              <span className="text-lg font-bold text-gray-800">
+              <span className="text-lg font-medium text-gray-700">
                 {item.price}
               </span>
               <span className="text-red-500 font-medium">Almost Sold Out</span>
@@ -117,6 +118,7 @@ const NewArrivals = () => {
         </button>
       </div>
     </section>
+    </div>
   );
 };
 

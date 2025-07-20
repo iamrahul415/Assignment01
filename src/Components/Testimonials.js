@@ -5,9 +5,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { FaStar } from "react-icons/fa";
 
+import leftModel from '../assets/img1.png';    
+import rightModel from '../assets/img2.png'; 
+
 const testimonials = [
   {
-    image: "./assets/img1.png",
+    image: leftModel,
     name: "KAIVANIYA",
     role: "Traveler",
     rating: 5,
@@ -15,7 +18,7 @@ const testimonials = [
       "You won't regret it. I would like to personally thank you for your outstanding product. Absolutely wonderful!",
   },
   {
-    image: "./assets/img2.png",
+    image: rightModel,
     name: "John W.",
     role: "Photographer",
     rating: 4,
@@ -38,7 +41,7 @@ const Testimonials = () => {
         </p>
       </div>
 
-      <Swiper
+      {/* <Swiper
         modules={[Navigation]}
         navigation
         spaceBetween={30}
@@ -49,10 +52,11 @@ const Testimonials = () => {
           },
         }}
         className="px-4"
-      >
-        {testimonials.map((t, idx) => (
-          <SwiperSlide key={idx}>
-            <div className="bg-white rounded-xl shadow-lg p-6 max-w-xl mx-auto">
+      > */}
+      <div className="flex gap-5">
+          {testimonials.map((t, idx) => (
+          // <SwiperSlide key={idx}>
+            <div className="rounded-xl shadow-lg p-6 max-w-xl mx-auto relative">
               <div className="flex flex-col md:flex-row gap-6 items-center">
                 <img
                   src={t.image}
@@ -73,9 +77,10 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-          </SwiperSlide>
+          // </SwiperSlide>
         ))}
-      </Swiper>
+      </div>
+      {/* </Swiper> */}
     </div>
   );
 };

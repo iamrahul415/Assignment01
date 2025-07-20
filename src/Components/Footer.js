@@ -1,12 +1,12 @@
 const Footer = () => {
   return (
-    <footer className="bg-slate-100 text-slate-950 py-8 px-4 md:px-16">
+    <footer className="w-full bg-white text-slate-950 py-8 px-4 md:px-16">
       <div className="flex flex-col md:flex-row justify-between items-center">
         {/* Logo */}
-        <h1 className="text-2xl font-bold mb-4 md:mb-0 text-gray-300">CAROAL</h1>
+        <h1 className="text-2xl font-medium mb-4 md:mb-0 text-gray-800">CAROAL</h1>
 
         {/* Navigation Links */}
-        <ul className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
+        <ul className="flex flex-wrap justify-center gap-6 text-sm text-gray-800">
           <li className="hover:text-white cursor-pointer">Support Center</li>
           <li className="hover:text-white cursor-pointer">Invoicing</li>
           <li className="hover:text-white cursor-pointer">Contract</li>
@@ -17,7 +17,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Line */}
-      <div className="mt-6 text-center text-sm text-gray-500">
+      <div className="mt-6 text-center text-sm text-gray-800">
         Copyright © 2022 CAROAL. All Rights Reserved.
       </div>
     </footer>

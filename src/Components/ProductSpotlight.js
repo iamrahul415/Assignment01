@@ -1,7 +1,8 @@
 const ProductSpotlight = () => {
   return (
     <section className="relative bg-gray-100 w-full overflow-hidden">
-      <div className="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto min-h-screen px-6 py-12 relative z-10">
+      <div className="flex flex-col lg:flex-row items-center justify-between w-full mx-auto px-6 relative z-10">
+       
         {/* Left: Image + Labels */}
         <div className="relative w-full lg:w-1/2 flex justify-center items-center mb-10 lg:mb-0">
           <img
@@ -11,10 +12,10 @@ const ProductSpotlight = () => {
           />
 
           {/* Labels */}
-          {/* Add as many as needed, adjust positions */}
-          <div className="absolute top-[12%] left-[42%]">
-            <div className="w-3 h-3 bg-white border-2 border-black rounded-full" />
-            <div className="mt-1 text-sm bg-black border px-2 py-0.5">Flat Cap</div>
+          <div className="absolute top-[5%] left-[50%]">
+            <div className="w-4 h-4 bg-gray-100 border-2 border-black rounded-full" />
+
+            <div className="mt-1 text-base text-black border px-2 py-0.5">Flat Cap</div>
           </div>
 
           <div className="absolute top-[28%] left-[25%]">
@@ -39,25 +40,25 @@ const ProductSpotlight = () => {
         </div>
 
         {/* Right: Details */}
-        <div className="w-full lg:w-1/2 text-left px-4 lg:px-10">
-          <p className="text-sm text-gray-500 uppercase">Men’s Collection</p>
-          <h2 className="text-4xl font-semibold text-gray-800 mb-4">
+        <div className="w-full flex justify-center lg:w-1/2 text-left px-4 lg:px-10">
+         <div>
+           <p className="text-base text-gray-800 uppercase">Men’s Collection</p>
+          <h2 className="text-4xl font-serif text-gray-600 mb-4 mt-4">
             Caroal Specials
           </h2>
 
           <p className=" text-black font-semibold mb-1 underline">Description</p>
-          <p className="text-gray-600 mb-6 max-w-md">
+          <p className="text-gray-400 mb-6 max-w-md">
             A vintage-inspired outfit featuring a tweed flat cap, white shirt,
             black suspenders, gray trousers, and black dress shoes.
           </p>
 
           <div className="mb-4">
-            <span className="mr-3 font-medium">Size:</span>
+            <span className="mr-3 font-medium text-gray-400">Size:</span>
             {["S", "M", "L", "XL"].map((size) => (
               <button
                 key={size}
-                className="inline-block bg-gray-600 text-white text-sm font-medium px-4 py-1.5 mx-1 rounded-md hover:bg-gray-800"
-              >
+                className="inline-block bg-gray-600 text-white text-sm font-medium px-4 py-1.5 mx-1 rounded-md">
                 {size}
               </button>
             ))}
@@ -68,6 +69,7 @@ const ProductSpotlight = () => {
           <button className="bg-black text-white px-8 py-3 rounded-md shadow hover:bg-gray-900 transition">
             Buy Now
           </button>
+         </div>
         </div>
       </div>
 

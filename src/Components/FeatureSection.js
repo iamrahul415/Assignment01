@@ -23,13 +23,17 @@ const features = [
 
 const FeatureSection = () => {
   return (
-    <section className="bg-white py-12 px-4">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+    <section className="w-full bg-white py-12 px-4">
+      <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {features.map((feature, index) => (
-          <div key={index} className="flex flex-col items-center">
-            <img src={feature.icon} alt={feature.title} className="h-10 mb-4" />
-            <h4 className="text-lg font-semibold text-gray-800">{feature.title}</h4>
-            <p className="text-sm text-gray-500">{feature.description}</p>
+          <div key={index} className="flex justify-center items-center gap-2">
+            <img src={feature.icon} alt={feature.title} className="h-10"/>
+            <div>
+              <h4 className="text-lg font-semibold text-gray-800">
+                {feature.title}
+              </h4>
+              <p className="text-sm text-gray-500">{feature.description}</p>
+            </div>
           </div>
         ))}
       </div>
