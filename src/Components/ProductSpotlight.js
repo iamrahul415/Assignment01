@@ -22,6 +22,8 @@ const ProductSpotlight = () => {
             <div className="mt-1 text-sm bg-black border px-2 py-0.5">Suspender</div>
           </div>
 
+          <h1>hello rahul</h1>
+
           <div className="absolute top-[37%] left-[42%]">
             <div className="w-3 h-3 bg-white border-2 border-black rounded-full" />
             <div className="mt-1 text-sm bg-black border px-2 py-0.5">Hugo Boss</div>
