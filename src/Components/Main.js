@@ -1,3 +1,4 @@
+import leftModel from '../assets/imageM1.png'; 
 const Main = () => {
   return (
     <div >
@@ -5,7 +6,7 @@ const Main = () => {
        
         {/* Left Image */}
         <div className="bg-gray-200 rounded-lg flex justify-center items-center">
-          <img src="../../assets/imageM1.png" alt="Look 1" className="object-cover" />
+          <img src={leftModel} alt="Look 1" className="object-cover" />
         </div>
 
         {/* Center Content */}
