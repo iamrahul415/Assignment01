@@ -1,5 +1,5 @@
 import React from 'react';
-import leftModel from '../assets/image 2.png';    
+import leftModel from '../assets/image 2.png';  
 import rightModel from '../assets/image 3.png'; 
 
 const AboutUs = () => {

@@ -1,4 +1,11 @@
 import React, { useState } from "react";
+import imgA1 from '../assets/ImageA1.png';
+import imgA2 from '../assets/ImageA2.png';
+import imgA3 from '../assets/ImageA3.png';
+import imgA4 from '../assets/ImageA4.png';
+import imgA5 from '../assets/ImageA5.png';
+import imgA6 from '../assets/ImageA6.png';
+
 
 const categories = [
   "Men's Fashion",
@@ -13,37 +20,37 @@ const products = [
     title: "Shiny Dress",
     brand: "Al Karam",
     price: "₹1095.50",
-    image: "./assets/imageA1.png",
+    image: imgA1,
   },
   {
     title: "Long Dress",
     brand: "Al Karam",
     price: "₹975.50",
-    image: "./assets/imageA2.png",
+    image: imgA2,
   },
   {
     title: "Full Sweater",
     brand: "Al Karam",
     price: "₹985.50",
-    image: "./assets/imageA3.png",
+    image: imgA3,
   },
   {
     title: "White Dress",
     brand: "Al Karam",
     price: "₹925.50",
-    image: "./assets/imageA4.png",
+    image: imgA4,
   },
   {
     title: "Colorful Dress",
     brand: "Al Karam",
     price: "₹985.50",
-    image: "./assets/imageA5.png",
+    image: imgA5,
   },
   {
     title: "White Shirt",
     brand: "Al Karam",
     price: "₹955.50",
-    image: "./assets/imageA6.png",
+    image: imgA6,
   },
 ];
 

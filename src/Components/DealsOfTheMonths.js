@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import leftModel from '../assets/image 2.png';
 
 const DealsOfTheMonths = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -41,7 +42,7 @@ const DealsOfTheMonths = () => {
         
         {/* Left Side */}
         <div className="">
-          <h2 className="text-4xl font-bold text-gray-800">Deals Of The Month</h2>
+          <h2 className="text-4xl font-serif text-gray-800">Deals Of The Month</h2>
           <p className="mt-4 text-gray-500">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis ultrices sollicitudin aliquam sem.
           </p>
@@ -79,12 +80,12 @@ const DealsOfTheMonths = () => {
             {[1, 2, 3].map((n) => (
               <div key={n} className="relative min-w-[280px] max-w-[300px]">
                 <img
-                  src={`./assets/image1.png`}
+                  src={leftModel}
         
                   alt={`Deal ${3}`}
                   className="rounded-md w-full object-cover"
                 />
-                <div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-md shadow-md text-sm">
+                <div className="absolute bottom-8 left-6 bg-white px-4 py-4 rounded-md shadow-md text-base">
                   <p className="text-gray-500">01— Spring Sale</p>
                   <p className="text-xl font-light text-gray-800">30% OFF</p>
                 </div>

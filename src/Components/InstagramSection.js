@@ -1,12 +1,12 @@
-const images = [
-  "./assets/image.png",
-  "./assets/image1.png",
-  "./assets/image2.png",
-  "./assets/image3.png",
-  "./assets/image4.png",
-  "./assets/image5.png",
-  "./assets/image6.png",
-];
+import imgI1 from '../assets/image.png';
+import imgI2 from '../assets/image1.png';
+import imgI3 from '../assets/image2.png';
+import imgI4 from '../assets/image3.png';
+import imgI5 from '../assets/image4.png';
+import imgI6 from '../assets/image5.png';
+import imgI7 from '../assets/image6.png';
+
+const images = [imgI1, imgI2, imgI3, imgI4, imgI5, imgI6, imgI7];
 
 const InstagramSection = () => {
   return (

@@ -1,25 +1,31 @@
+import supportIcon1 from '../assets/support1.png';
+import supportIcon2 from '../assets/support2.png';
+import supportIcon3 from '../assets/support3.png';
+import supportIcon4 from '../assets/support4.png';
+
 const features = [
   {
-    icon: "./assets/support1.png",
+    icon: supportIcon1,
     title: "High Quality",
     description: "crafted from top materials",
   },
   {
-    icon: "./assets/support2.png",
+    icon: supportIcon2,
     title: "Warranty Protection",
     description: "Over 2 years",
   },
   {
-    icon: "./assets/support3.png",
+    icon: supportIcon3,
     title: "Free Shipping",
     description: "Order over 150 $",
   },
   {
-    icon: "./assets/support4.png",
+    icon: supportIcon4,
     title: "24 / 7 Support",
     description: "Dedicated support",
   },
 ];
+
 
 const FeatureSection = () => {
   return (

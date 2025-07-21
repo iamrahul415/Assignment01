@@ -1,3 +1,5 @@
+import imgProS from '../assets/imagePs.png';
+
 const ProductSpotlight = () => {
   return (
     <section className="relative bg-gray-100 w-full overflow-hidden">
@@ -6,7 +8,7 @@ const ProductSpotlight = () => {
         {/* Left: Image + Labels */}
         <div className="relative w-full lg:w-1/2 flex justify-center items-center mb-10 lg:mb-0">
           <img
-            src="./assets/imagedd1.png"
+            src={imgProS}
             alt="Model"
             className="w-full max-w-lg object-contain"
           />
