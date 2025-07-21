@@ -12,35 +12,34 @@ const ProductSpotlight = () => {
           />
 
           {/* Labels */}
-          <div className="absolute top-[5%] left-[50%]">
-            <div className="w-4 h-4 bg-gray-100 border-2 border-black rounded-full" />
-
-            <div className="mt-1 text-base text-black border px-2 py-0.5">Flat Cap</div>
+          <div className="absolute top-[5%] left-[55%]">
+            <div className="w-4 h-4 bg-white border-2 border-black rounded-full" />
+            <div className="mt-1 text-base text-black border-2 border-black bg-slate-200 px-2 py-0.5">Flat Cap</div>
           </div>
 
           <div className="absolute top-[28%] left-[25%]">
-            <div className="w-3 h-3 bg-white border-2 border-black rounded-full" />
-            <div className="mt-1 text-sm bg-black border px-2 py-0.5">Suspender</div>
+            <div className="w-4 h-4 bg-white border-2 border-black rounded-full" />
+            <div className="mt-1 text-base text-black border-2 border-black bg-slate-200 px-2 py-0.5">Suspender</div>
           </div>
 
           <div className="absolute top-[37%] left-[42%]">
-            <div className="w-3 h-3 bg-white border-2 border-black rounded-full" />
-            <div className="mt-1 text-sm bg-black border px-2 py-0.5">Hugo Boss</div>
+            <div className="w-4 h-4 bg-white border-2 border-black rounded-full" />
+            <div className="mt-1 text-base text-black border-2 border-black bg-slate-200 px-2 py-0.5">Hugo Boss</div>
           </div>
 
           <div className="absolute top-[58%] left-[23%]">
-            <div className="w-3 h-3 bg-white border-2 border-black rounded-full" />
-            <div className="mt-1 text-sm bg-black border px-2 py-0.5">Hugo Boss</div>
+            <div className="w-4 h-4 bg-white border-2 border-black rounded-full" />
+            <div className="mt-1 text-base text-black border-2 border-black  bg-slate-200 px-2 py-0.5">Hugo Boss</div>
           </div>
 
           <div className="absolute bottom-[7%] left-[40%]">
-            <div className="w-3 h-3 bg-white border-2 border-black rounded-full" />
-            <div className="mt-1 text-sm bg-black border px-2 py-0.5">Santoni</div>
+            <div className="w-4 h-4 bg-white border-2 border-black rounded-full" />
+            <div className="mt-1 text-base text-black border-2 border-black bg-slate-200 px-2 py-0.5">Santoni</div>
           </div>
         </div>
 
         {/* Right: Details */}
-        <div className="w-full flex justify-center lg:w-1/2 text-left px-4 lg:px-10">
+        <div className="w-full flex justify-center lg:w-1/2 text-left px-2 lg:px-10">
          <div>
            <p className="text-base text-gray-800 uppercase">Men’s Collection</p>
           <h2 className="text-4xl font-serif text-gray-600 mb-4 mt-4">
@@ -74,7 +73,7 @@ const ProductSpotlight = () => {
       </div>
 
       {/* Diagonal Divider - Optional visual effect */}
-      <div className="hidden lg:block absolute inset-y-0 left-1/2 w-[2px] bg-gray-300 transform -translate-x-1/2 rotate-12 origin-bottom"></div>
+      <div className="hidden lg:block absolute inset-y-0 left-1/2 w-[2px] bg-gray-600 transform -translate-x-1/2 rotate-12 origin-bottom"></div>
     </section>
   );
 };

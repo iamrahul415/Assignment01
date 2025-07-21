@@ -41,21 +41,8 @@ const Testimonials = () => {
         </p>
       </div>
 
-      {/* <Swiper
-        modules={[Navigation]}
-        navigation
-        spaceBetween={30}
-        slidesPerView={1}
-        breakpoints={{
-          768: {
-            slidesPerView: 1.5,
-          },
-        }}
-        className="px-4"
-      > */}
       <div className="flex gap-5">
           {testimonials.map((t, idx) => (
-          // <SwiperSlide key={idx}>
             <div className="rounded-xl shadow-lg p-6 max-w-xl mx-auto relative">
               <div className="flex flex-col md:flex-row gap-6 items-center">
                 <img
@@ -77,10 +64,8 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-          // </SwiperSlide>
         ))}
       </div>
-      {/* </Swiper> */}
     </div>
   );
 };
